@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART MOTOR CONTROL</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                <h1>WELCOME TO MOTOR CONTROL</h1>
+            </div>
+            <div class="date" id="dateDisplay">
+                
+
+            </div>
+            <div class="time" id="realTimeData">
+
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="left">
+                <div class="vfd_title">
+                    <h1>Control VFD D700</h1>
+                </div>
+
+                <div class="top">
+                    <div class="speed">
+                        <h2>Set speed</h2>
+                        <input type="number" id="label_speed"><label>Hz</label>
+                    </div>
+                    <div class="voltage">
+                        <h2>Voltage</h2>
+                        <input type="number" id="label_voltage"><label>V</label>
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="frequency">
+                        <h2>Frequency</h2>
+                        <input type="number" id="label_frequency"><label>Hz</label>
+                    </div>
+                    <div class="current">
+                        <h2>Current</h2>
+                        <input type="number" id="label_current"><label>A</label>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="button_stop">
+
+                    </div>
+                    <div class="button_start">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="relay_title">
+
+                </div>
+                <div class="dis_relay">
+                    <div class="lamp">
+
+                    </div>
+                    <div class="relay_one">
+
+                    </div>
+                    <div class="relay_two">
+
+                    </div>
+                    <div class="stop_relay">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+       // Function to update the date display
+        function updateDateDisplay() {
+            var currentDate = new Date();
+            var day = currentDate.getDate();
+            var month = currentDate.getMonth() + 1; // Months are zero-based
+            var year = currentDate.getFullYear();
+
+            // Pad single digit day and month with leading zero if necessary
+            day = (day < 10) ? '0' + day : day;
+            month = (month < 10) ? '0' + month : month;
+
+            // Format the date as desired (e.g., DD/MM/YYYY)
+            var formattedDate = day + '/' + month + '/' + year;
+
+            // Update the content of the date display element
+            document.getElementById('dateDisplay').textContent = formattedDate;
+        }
+
+        // Call the function to initially display the date
+        updateDateDisplay();
+        </script>
+
+    <script>
+        // Function to update the real-time data
+        function updateRealTimeData() {
+            // Simulating fetching data from a server
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var seconds = currentTime.getSeconds();
+
+            // Format the time
+            var formattedTime = hours + ":" + minutes + ":" + seconds;
+
+            // Update the HTML content
+            document.getElementById("realTimeData").innerText = formattedTime;
+        }
+
+        // Update the real-time data every second
+        setInterval(updateRealTimeData, 1000);
+    </script>
+</body>
+</html>

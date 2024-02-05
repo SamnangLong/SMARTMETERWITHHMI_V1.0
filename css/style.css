@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+}
+
+/* CONTAIN */
+.container{
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 2px;
+    height: 375px;
+    width: 812px;
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: aliceblue;
+}
+
+/* -TOP- */
+.container .header {
+    height: 30px;
+    width: 812px;
+    margin-bottom: 5px;
+    background-color: red;
+}
+.header .title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+    margin: auto;
+    width: 530px;
+    height: 100%;
+    float: left;
+    background-color: gold;
+}
+.header .title h1 {
+    margin-top: 4px;
+}
+.header .date {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+    padding-top: 3px;
+    font-size: 22px;
+    width: 170px;
+    height: 27px;
+    float: left;
+    background-color:lightgreen;
+}
+.header .time {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+    padding-top: 3px;
+    font-size: 22px;
+    width: 112px;
+    height: 27px;
+    float: left;
+    background-color:lawngreen;
+}
+
+/* -MIDDLE- */
+.container .body {
+    height: 340px;
+    width: 812px;
+    background-color:dodgerblue;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    margin-left: 100px;
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: aliceblue;
+    margin-left: 100px;
+}
+
+/* --LEFT-- */
+.container .body .left {
+    height: 337px;
+    width: 70%;
+    float: left;
+    background-color: darkcyan;
+}
+.body .left .vfd_title {
+    height: 40px;
+    width: 100%;
+    margin-top: -13px;
+    background-color:darkgreen;
+}
+
+/* ---BODY TOP--- */
+.body .left .top {
+    height: 115px;
+    width: 100%;
+    /* background-color:brown; */
+}
+.left .top .speed {
+    height: 115px;
+    width: 50%;
+    float: left;
+    background-color:hotpink;
+}
+.left .top .speed #label_speed {
+    height: 30px;
+    width: 100px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+
+.left .top .voltage {
+    height: 115px;
+    width: 50%;
+    float: left;
+    background-color:cyan;
+}
+.left .top .voltage #label_voltage {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+/* ---BODY MIDDLE--- */
+.body .left .middle {
+    height: 115px;
+    width: 100%;
+    background-color:dimgrey;
+}
+.left .middle .frequency {
+    height: 115px;
+    width: 50%;
+    float: left;
+    background-color:cyan;
+}
+.left .frequency #label_frequency {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+.left .middle .current {
+    height: 115px;
+    width: 50%;
+    float: left;
+    background-color:hotpink;
+}
+.left .current #label_current {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+/* ---BODY BUTTOM--- */
+.body .left .bottom {
+    height: 70px;
+    width: 100%;
+    background-color:yellow;
+}
+.left .bottom .button_stop {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 60px;
+    width: 50%;
+    float: left;
+    /* background-color:hotpink;; */
+}
+.left .bottom .button_start {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 60px;
+    width: 50%;
+    float: left;
+    /* background-color:cyan; */
+}
+
+
+/* --RIGHT-- */
+.container .body .right {
+    height: 340px;
+    width: 30%;
+    float: left;
+    background-color:darkorchid ;
+}
+.body .right .relay_title {
+    height: 40px;
+    width: 100%;
+    background-color:brown;
+}
+.body .right .dis_relay {
+    height: 300px;
+    width: 100%;
+    background-color: aqua;
+}
+.right .dis_relay .lamp {
+    height: 90px;
+    width: 100%;
+    background-color:darkorchid ;
+}
+.right .dis_relay .relay_one {
+    height: 70px;
+    width: 100%;
+    background-color:chartreuse ;
+}
+.right .dis_relay .relay_two {
+    height: 70px;
+    width: 100%;
+    background-color:darkgoldenrod ;
+}
+.right .dis_relay .stop_relay {
+    height: 70px;
+    width: 100%;
+    background-color:crimson ;
+}
